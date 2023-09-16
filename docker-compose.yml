@@ -2,11 +2,12 @@ version: "3.8"
 
 services:
   caboto:
-    build: apps/caboto
+    build:
+      context: .
+      dockerfile: apps/caboto/Dockerfile
     ports:
       - "3000:3000"
-
-  dagama:
-    build: apps/dagama
-    ports:
-      - "3001:3001"
+  # dagama:
+  #   build: apps/dagama
+  #   ports:
+  #     - "3001:3001"
