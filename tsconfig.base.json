@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@caboto/core": ["libs/core/src/index.ts"],
+      "@caboto/tommaso": ["tommaso/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

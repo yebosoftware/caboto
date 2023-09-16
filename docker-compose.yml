@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  caboto:
+    build: apps/caboto
+    ports:
+      - "3000:3000"
+
+  dagama:
+    build: apps/dagama
+    ports:
+      - "3001:3001"
