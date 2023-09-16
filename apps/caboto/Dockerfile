@@ -6,6 +6,6 @@ COPY . .
 
 RUN dir -s
 
-RUN ls && npm install && npx nx build caboto && ls -al
+RUN ls && npm install
 
-CMD ["node", "dist/caboto/main.js"]
+CMD ["nx", "run", "caboto:serve:production"]
