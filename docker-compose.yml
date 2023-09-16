@@ -6,9 +6,9 @@ services:
       file: docker-compose.base.yml
       service: nx-app-base
     command: npm run caboto:dev:docker
-    # ports:
-    #   - "3000:3000"
-    # dagama:
-    #   build: apps/dagama
-    #   ports:
-    #     - "3001:3001"
+
+  dagama:
+    extends:
+      file: docker-compose.base.yml
+      service: nx-app-base
+    command: npm run dagama:dev:docker

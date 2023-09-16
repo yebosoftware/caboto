@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "caboto:dev:docker": "nx serve caboto --host=0.0.0.0"
+    "caboto:dev:docker": "nx serve caboto --host=0.0.0.0",
+    "dagama:dev:docker": "nx serve dagama --host=0.0.0.0"
   },
   "private": true,
   "dependencies": {
