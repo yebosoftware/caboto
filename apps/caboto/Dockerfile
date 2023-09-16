@@ -1,8 +1,9 @@
 FROM node:18
 
-WORKDIR /app
 
 COPY . .
+
+RUN ls -al
 
 RUN npm install
 
