@@ -4,6 +4,6 @@ COPY . .
 
 RUN dir -s
 
-RUN npm install
+RUN ls && npm install && npx nx build caboto
 
-CMD ["npm", "run", "start", "caboto"]
+CMD ["npm", "run", "start"]
