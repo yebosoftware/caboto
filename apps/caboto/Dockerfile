@@ -8,4 +8,4 @@ RUN dir -s
 
 RUN ls && npm install
 
-CMD ["nx", "run", "caboto:serve:production"]
+CMD ["npx", "nx", "run", "caboto:serve:production"]
