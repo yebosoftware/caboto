@@ -5,8 +5,8 @@ services:
     build:
       context: .
       dockerfile: apps/caboto/Dockerfile
-    # dagama:
-    #   extends:
-    #     file: docker-compose.base.yml
-    #     service: nx-app-base
-    #   command: npm run dagama:dev:docker
+
+  dagama:
+    build:
+      context: .
+      dockerfile: apps/dagama/Dockerfile
