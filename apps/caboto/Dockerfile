@@ -2,7 +2,7 @@ FROM node:18
 
 COPY . .
 
-RUN ls -al
+RUN dir -s
 
 RUN npm install
 
