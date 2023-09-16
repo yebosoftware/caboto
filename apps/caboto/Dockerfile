@@ -1,6 +1,5 @@
 FROM node:18
 
-
 COPY . .
 
 RUN ls -al
