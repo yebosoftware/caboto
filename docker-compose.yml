@@ -2,12 +2,13 @@ version: "3.8"
 
 services:
   caboto:
-    build:
-      context: .
-      dockerfile: apps/caboto/Dockerfile
-    ports:
-      - "3000:3000"
-  # dagama:
-  #   build: apps/dagama
-  #   ports:
-  #     - "3001:3001"
+    extends:
+      file: docker-compose.base.yml
+      service: nx-app-base
+    command: npm run app-1:dev:docker
+    # ports:
+    #   - "3000:3000"
+    # dagama:
+    #   build: apps/dagama
+    #   ports:
+    #     - "3001:3001"
