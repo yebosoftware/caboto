@@ -4,8 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN dir -s
-
-RUN ls && npm install
+RUN npm install
 
 CMD ["npx", "nx", "run", "caboto:serve:production"]
